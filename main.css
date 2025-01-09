@@ -38,7 +38,9 @@ em {
 }
 
 .info {
-    margin: 20px;
+    margin-left: 30px;
+    width: 400px;
+    text-align: justify;
 }
 
 #pp {
