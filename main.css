@@ -22,7 +22,7 @@ em {
     font-style: normal;
 }
 
-#play_game_button {
+#page_change {
     margin: 20px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -37,10 +37,12 @@ em {
     transition: background-color 0.3s ease;
 }
 
+#page_change:hover {
+    background-color: rgba(69, 128, 21, 0.6);
+}
+
 .main {
     display: flex;
-    /* width: 600px;
-    height: 400px; */
     padding: 30px;
     justify-content: center;
     align-items: center;

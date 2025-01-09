@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>About Me</title>
+        <link rel="stylesheet" type="text/css" href="../main.css" />
+        <link rel="stylesheet" type="text/css" href="game_style.css" />
+    </head>
+    <body>
+            <div class="main"> <!-- Main Container -->
+
+                <div class="header"> <!-- Header -->
+                   <p>Word Prediction Game</p>
+                </div>
+
+                <div class="cards"> <!-- Cards -->
+                    <div class="card">
+                        <img src="../images/b_vector.svg" id="letter_b">
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/l_vector.svg" id="letter_l">
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/i_vector.svg" id="letter_i">
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/n_vector.svg" id="letter_n">
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/k_vector.svg" id="letter_k">
+                    </div>
+                </div>
+
+                <div class="buttons_and_score">
+
+                    <div class="button-input"> <!-- Buttons and Input -->
+                        
+                        <div class="input">
+                            <input type="text" id="user-input" placeholder="Write your prediction">
+                        </div>
+
+                        <div class="button">
+                            <button id="submit-button">Submit</button>
+                            <button id="restart-button" class="hidden">Reset The Game</button>
+                        </div>
+                    </div>
+    
+                    <div class="score"> <!-- Score and Life -->
+                        <p>Score: <span id="score">0</span></p>
+                        <p class="live">Lives: <img src="../images/heart_vector.svg" id="life_1"><img src="../images/heart_vector.svg" id="life_2"><img src="../images/heart_vector.svg" id="life_3"></p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div> <!-- Game Sender Button -->
+                <a href="../index.html"><button id="page_change">Go Back</button></a>
+            </div>
+    </body>
+</html>

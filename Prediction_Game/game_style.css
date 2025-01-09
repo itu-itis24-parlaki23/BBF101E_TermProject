@@ -1,0 +1,28 @@
+.main {
+    flex-direction: column;
+}
+
+.header {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    margin: 5px;
+    border: 2px solid greenyellow;
+    background-color: rgba(0, 0, 255, 0.4);
+}
+
+.card img {
+    visibility: hidden;
+}
+
+.live img {
+    width: 13px;
+    height: auto;
+}
