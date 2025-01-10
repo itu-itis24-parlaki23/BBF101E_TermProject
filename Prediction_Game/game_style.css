@@ -22,6 +22,15 @@
     visibility: hidden;
 }
 
+.card.visible {
+    border: none;
+    background-color: transparent;
+}
+
+.card.visible img {
+    visibility: visible;
+}
+
 .live img {
     width: 13px;
     height: auto;
