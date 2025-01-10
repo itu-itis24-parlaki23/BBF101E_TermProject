@@ -1,5 +1,6 @@
 .main {
     flex-direction: column;
+    width: 550px;
 }
 
 .header {
@@ -16,10 +17,13 @@
     margin: 5px;
     border: 2px solid greenyellow;
     background-color: rgba(0, 0, 255, 0.4);
+    transition: background-color 0.2s ease, border 0.2s ease;
 }
 
 .card img {
     visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .card.visible {
@@ -29,6 +33,7 @@
 
 .card.visible img {
     visibility: visible;
+    opacity: 1;
 }
 
 .live img {
@@ -83,4 +88,8 @@ input[type="text"] {
     position: absolute;
     right: 0;
     text-align: right;
+}
+
+.hidden {
+    display: none;
 }
