@@ -7,7 +7,6 @@ let hidden_word = "blink";
 let lives = 3;
 let array = [0, 0, 0, 0, 0];
 let char_found = 0;
-isCorrect = false;
 
 submitButton.addEventListener("click", () => {
     resetButton.classList.remove("hidden");
@@ -31,7 +30,8 @@ submitButton.addEventListener("click", () => {
                 char_found += 1;
                 score.innerText = parseInt(score.innerText) + 20;
                 if(char_found == 5){
-                    isCorrect = true;
+                    submitButton.classList.add("hidden");
+                    alert("You won!");
                 }
             }else{
                 alert("Letter already found!");
@@ -46,18 +46,14 @@ submitButton.addEventListener("click", () => {
             for(let i = 0; i < hidden_word.length; i++){
                 make_card_visible(i);
             }
-            isCorrect = true;
+            submitButton.classList.add("hidden");
+            alert("You won!");
         }
     }else if(!word.length){
         alert("Enter a letter or a prediction!");
     }else{
         submitButton.classList.add("hidden");
         alert("You lost!");
-    }
-
-    if(isCorrect){
-        submitButton.classList.add("hidden");
-        alert("You won!");
     }
 
     userInput.value = ""
@@ -92,14 +88,12 @@ function reset_life_img() {
 
 function make_card_visible(index) {
     const cards = document.querySelectorAll(".cards .card")
-
     cards[index].classList.add("visible");
 }
 
 function make_cards_hidden() {
     const cards = document.querySelectorAll(".cards .card")
-
-    cards.forEach(card => {
-        card.classList.remove("visible");
-    });
+    for(let i = 0; i < cards.length; i++){
+        cards[i].classList.remove("visible");
+    }
 }
